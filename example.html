@@ -42,5 +42,8 @@
     <a id="ml" href="#" data-uri="fb://profile" onclick="clickHandler(this.dataset.uri)">open fb://profile</a>
 </body>
     <script>
-	document.getElementById("ml").click();	</script>
+	window.onload = function() {
+    deeplink.open("myapp://object/xyz");
+}
+	</script>
 </html>
